@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pasudo selector</title>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                background-color: teal;
+            }
+            h1{
+                color:aqua;
+            }
+            /*Attribute Selector */
+            a{
+                color:blue;
+                text-decoration: none;
+            }
+            a:hover{
+                color:rgb(18, 192, 105)
+            }
+            /*Child Selector*/
+            ul>li{
+                font-weight: 10px;
+            }
+            /*Sibling Selector*/
+            h1+p {
+                background-color: teal;
+                padding: 100px;
+                border-radius: 55px;
+                color:aqua;
+            }
+            /* :hover Pseudo-class */
+            ul li:hover{
+                color:aqua;
+            }
+            /* :nth-child(n) Pseudo-class */
+            ul li:nth-child(5){
+            background-color: teal;
+            }
+            /* :not(selector)Pseudo-class */
+            ul li::after{
+                content:"🚀";
+            }
+            /* ::after Pasudo-elemnt */
+            a::after{
+                content:"🌌";
+            }
+            /* ::first-letter Pseudo-element */
+            p::first-letter{
+                font-size: 200%;
+                color:brown;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Welcome to space explorer club</h1>
+
+        <ul>
+            <li>Mon mison</li>
+            <li>Mars rover</li>
+            <li>International Space Station</li>
+            <li>telescope and star</li>
+            <li>Black Hole Mysteries</li>
+        </ul>
+        <p>Space exploration has always</p>
+        <p>Space exploration has always</p>
+        <a href="#">Join our Misson</a>
+        <a href="#">Latest Space News</a>
+        <a href="#">Gallery of the Univers</a>
+    </body>
+</html>
